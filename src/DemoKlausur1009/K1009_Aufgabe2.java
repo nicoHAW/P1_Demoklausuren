@@ -30,7 +30,7 @@ public class K1009_Aufgabe2 {
         System.out.printf( "----- Aufgabe 2: b TEST -----\n");
 
         //Zuweisung bei Wrapper-Klassen möglich. 
-        
+
         Boolean booleana = null;
         Byte bytea = null;
         Character chara = null;
@@ -94,10 +94,10 @@ public class K1009_Aufgabe2 {
 
         System.out.printf( "\n\n");
         System.out.printf( "----- Aufgabe 2: h -----\n");
-        
+
         byte valh = (byte)( (0x7e & 0xbd &0xdb & 0xe7 ) ^ 0xc3 );
         System.out.printf( "%x", valh );
-        
+
         /* 
          * Achtung Falle: 0x7e & 0xbd &0xdb & 0xe7 hebt sich auf. 
          * 
@@ -112,16 +112,32 @@ public class K1009_Aufgabe2 {
          * ---------------------
          * Ergebnis:   1100 0011
          * 
-         * 
          */
-        
-        
-        
 
         System.out.printf( "\n\n");
         System.out.printf( "----- Aufgabe 2: i -----\n");
+        long vali = ( Long.MAX_VALUE + Long.MIN_VALUE );
 
+        if( vali < Long.MIN_VALUE ){ System.out.printf( "k" );
+        } else if( vali > Long.MAX_VALUE ){ System.out.printf( "g" );
+        } else{ System.out.printf( "d" );
+        }
 
+        /*
+         * Long.MIN_VALUE = -9223372036854775808
+         * Long.MAX_VALUE = 9223372036854775807
+         * 
+         * Variable = -1, daher k.
+         */
+        
+        System.out.printf( "\n\n");
+        System.out.printf( "----- Aufgabe 2: i TEST -----\n");
+        
+        System.out.println( Long.MIN_VALUE );
+        System.out.println( Long.MAX_VALUE );
+        System.out.println( Long.MAX_VALUE + Long.MIN_VALUE );
+        
+        
         System.out.printf( "\n\n");
         System.out.printf( "----- Aufgabe 2: j -----\n");
 
