@@ -317,7 +317,7 @@ public class CodeSchnipsel {
         
 
         
-        System.out.printf("Byte cb = (byte)( Byte.MIN_VALUE < Character.MIN_VALUE ? 0%1 : 1%0 );  = "); 
+        System.out.println("Byte cb = (byte)( Byte.MIN_VALUE < Character.MIN_VALUE ? 0%1 : 1%0 );  = "); 
         Byte cb = (byte)( Byte.MIN_VALUE < Character.MIN_VALUE ? 0%1 : 1%0 );
         System.out.printf( "%s", cb );
 
@@ -417,7 +417,7 @@ public class CodeSchnipsel {
         
 
         
-        System.out.printf("byte valz = (byte)( 414141 % 41 < 41\r\n"
+        System.out.println("byte valz = (byte)( 414141 % 41 < 41\r\n"
                 + "                ? 1F*1D\r\n"
                 + "                        : Float.NEGATIVE_INFINITY / Double.POSITIVE_INFINITY\r\n"
                 + "                );  = "); 
