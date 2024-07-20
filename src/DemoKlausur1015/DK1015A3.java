@@ -43,7 +43,7 @@ public class DK1015A3 {
 
 
         Void j = null;
-        System.out.print("\\nAufgabe j:" + j );
+        System.out.print("\nAufgabe j:" + j );
 
 
         System.out.printf("\n\n----- AUFGABE 4 -----" );
