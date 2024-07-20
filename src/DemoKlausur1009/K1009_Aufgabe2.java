@@ -26,6 +26,9 @@ public class K1009_Aufgabe2 {
          *  float floata = null;
          *  double doublea = null;
          */
+        
+        
+        
         System.out.printf( "\n\n");
         System.out.printf( "----- Aufgabe 2: b TEST -----\n");
 

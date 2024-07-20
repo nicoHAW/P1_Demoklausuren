@@ -338,8 +338,8 @@ public class CodeSchnipsel {
         
         
         System.out.printf("float j = (float)( (3/2)*(4/3)*(8/4) );  = "); 
-        float j = (float)( (3/2)*(4/3)*(8/4) );
-        System.out.printf( "%.2f", j );
+        float jrill = (float)( (3/2)*(4/3)*(8/4) );
+        System.out.printf( "%.2f", jrill );
 
         System.out.printf( "\n\n\n"); 
         
@@ -777,6 +777,11 @@ public class CodeSchnipsel {
         : 1d + 1f + 01 + 0x1 + 0b1
         );
         System.out.printf( "%d", valju );
+        
+        System.out.printf( "\n\nErklärung" );
+        System.out.printf( "\n131313 %% 13 = %d ; also: %b ", (131313 % 13), (131313 % 13 < 0));
+        System.out.printf( "\n 1d (double) = %f; 1f (float) = %f; 01 (int) = %d; 0x1 (hex) = %x; 0b1 (binär) = %d;", 1d, 1f, 01, 0x1, 0b1);
+        
         System.out.printf( "\n\n\n");
 
         
@@ -834,7 +839,6 @@ public class CodeSchnipsel {
         
         
         System.out.printf( "Boolean boolon = !((( true ^ false) || false ) && true ); = ");
-        
         Boolean boolon = !((( true ^ false) || false ) && true );
         System.out.printf( "%s", boolon );
         System.out.printf( "\n\n\n");
@@ -842,7 +846,6 @@ public class CodeSchnipsel {
         
         
         System.out.printf( " Boolean boolom = !(( true ^ false) != ( true != false )) ? null : true|false; = ");
-        
         Boolean boolom = !(( true ^ false) != ( true != false )) ? null : true|false;
         System.out.printf( "%s", boolom ); 
         System.out.printf( "\n\n\n");
@@ -850,7 +853,6 @@ public class CodeSchnipsel {
         
         
         System.out.printf( "String ser = \"z\" + 0; = ");
-        
         String ser = "z" + 0;
         System.out.printf( "%s", ser );
         System.out.printf( "\n\n\n");
@@ -858,7 +860,6 @@ public class CodeSchnipsel {
         
         
         System.out.println( "Character cer = (char)( 0 + 'z' ); = ");
-        
         Character cer = (char)( 0 + 'z' );
         System.out.printf( "%c", cer );
         System.out.printf( "\n\n\n");
@@ -866,7 +867,6 @@ public class CodeSchnipsel {
         
         
         System.out.printf( "int valer = (short)(1) + (char)(1); = ");
-        
         int valer = (short)(1) + (char)(1);
         System.out.printf( "%d", valer );
         System.out.printf( "\n\n\n");
@@ -947,7 +947,237 @@ public class CodeSchnipsel {
         int valrt = 1<<2 != 2>>1 ? 1<<2 : 2>>>1;
         System.out.printf( "%d", valrt ); 
         System.out.printf( "\n\n\n");
+        
+        
+        
+        System.out.printf( "----- Seite 16 -----\n\n");
+
+        System.out.printf( "Boolean a = !(-4>-5) ? (!true^!!true)||true : null; = ");
+        Boolean abd = !(-4>-5) ? (!true^!!true)||true : null;
+        System.out.printf( "%s", abd );
+        System.out.printf( "\n\n\n");
+        
+        System.out.printf( "\nErklärung");
+        System.out.printf( "\nBoolean ist Wrapper-Klasse und kann 'null' annehmen");
+        
+        
+        
+        System.out.printf( "byte b = 98765%%43 == 47 ? (byte)(1D*1.0/(1-1L)) : (byte)(0/11); = ");
+        byte drill = 98765%43 == 47 ? (byte)(1D*1.0/(1-1L)) : (byte)(0/11);
+        System.out.printf( "%d", drill );
+        
                 
+        int fdrill = 98765%43 == 47 ? (int)(1D*1.0/(1-1L)) : (int)(0/11);
+        System.out.printf( "%d", fdrill );
+        
+        System.out.printf( "\n\n\n");
+        
+        
+
+        
+        System.out.printf( "byte c = (byte)((0x81|0x42|0x24|0x18)^0x3c); = ");
+        byte cgh = (byte)((0x81|0x42|0x24|0x18)^0x3c);
+        System.out.printf( "%x", cgh );
+        System.out.printf( "\n\n\n");
+        
+        System.out.printf( "\nErklärung");
+        System.out.printf("\n 0x81 | 0x42 | 0x24 | 0x18 ) ^ 0x3c"
+                + "         * \r\n"
+                + "         * Bitwise Zuordnung: \r\n"
+                + "         * 0x81 =      1000 0001\r\n"
+                + "         * 0x42 =    | 0100 0010  | = OR-Verknüpfung\r\n"
+                + "         * 0x24 =    | 0010 0100  | = OR-Verknüpfung\r\n"
+                + "         * 0x18 =    | 0001 1000  | = OR-Verknüpfung\r\n"
+                + "         *----------------------\r\n"
+                + "         *             1111 1111\r\n"
+                + "         * 0x3c =    ^ 0011 1100  ^ = XOR-Verknüpfung\r\n"
+                + "         * ---------------------\r\n"
+                + "         * Ergebnis:   1100 0011");
+
+        
+        
+        
+        System.out.printf( "int d = (Character.MAX_VALUE - Character.MIN_VALUE) >>> 15 ; = ");
+        int djh = (Character.MAX_VALUE - Character.MIN_VALUE) >>> 15 ;
+        System.out.printf( "%d", djh );
+        System.out.printf( "\n\n\n");
+
+        
+        
+        
+        System.out.printf( "int e = Short.MIN_VALUE >> 17; = ");
+        int ejh = Short.MIN_VALUE >> 17;
+        System.out.printf( "%d", ejh );
+        
+        System.out.printf( "\nErklärung");
+        System.out.printf( "\r\n"
+                + ">> (vorzeichenbehaftet): Führt bei negativen Zahlen zu führenden Einsen, bei positiven Zahlen zu führenden Nullen.\r\n"
+                + ">>> (vorzeichenlos): Führt immer zu führenden Nullen, unabhängig vom Vorzeichen.");
+        System.out.printf( "\n\nBEISPIELE");
+        System.out.printf( "\n\6 >> 5:\r\n"
+                + "Binär: 0000 0110 >> 5 = 0000 0000 (0)\r\n"
+                + "3 >> 2:\r\n"
+                + "Binär: 0000 0011 >> 2 = 0000 0000 (0)\r\n"
+                + "-6 >> 5:\r\n"
+                + "Binär: 1111 1010 >> 5 = 1111 1111 (-1)\r\n"
+                + "-3 >> 2:\r\n"
+                + "Binär: 1111 1101 >> 2 = 1111 1111 (-1)");
+        System.out.printf( "\n\n\n");
+
+        
+        
+        
+        System.out.printf( "----- Seite 17 -----\n\n");
+
+        System.out.printf( "boolean a = (false == !false) ? (!false^!!false)&&false : true!=!true; = ");
+        boolean ajh = (false == !false) ? (!false^!!false)&&false : true!=!true; 
+        System.out.printf( "%b", ajh );
+        System.out.printf( "\n\n\n");
+
+        
+        
+        
+        System.out.printf( "byte b = 1 - ( 1*1 - 1/1 )/*0*/*13; = ");
+        byte ber = 1 - ( 1*1 - 1/1 )/*0*/*13;
+        System.out.printf( "%b", ber );
+        System.out.printf( "\n\n\n");
+
+        
+        
+        
+        System.out.printf( "char c = 'a'<'z' ? 'b'+1 : 'y'-1; = ");
+        char cert = 'a'<'z' ? 'b'+1 : 'y'-1;
+        System.out.printf( "%b", cert );
+        System.out.printf( "\n\n\n");
+
+        
+        
+        
+        System.out.printf( "Byte dB = 4; Short dS = (short)((byte)3); Integer dI = (int)((byte)3); Long dL = (long)((char)3); Float dF = (float)3.0; Double dD = 3.0; byte d = (byte)((byte)(dB * (byte)(dS + dI + dL)) / (byte)(dF + dD));= ");
+        Byte dB = 4; 
+        Short dS = (short)((byte)3); 
+        Integer dI = (int)((byte)3); 
+        Long dL = (long)((char)3); 
+        Float dF = (float)3.0; 
+        Double dD = 3.0; 
+        byte der = (byte)((byte)(dB * (byte)(dS + dI + dL)) / (byte)(dF + dD));
+        System.out.printf( "%b", der );
+        System.out.printf( "\n\n\n");
+
+        
+        
+        
+        System.out.printf( "short e = 1 > 0?8 >> 2:42 >>> 13-7; = ");
+        short were = 1 > 0?8 >> 2:42 >>> 13-7;
+        System.out.printf( "%b", were );
+        System.out.printf( "\n\n\n");
+
+        System.out.printf( "----- Seite 18 -----\n\n");
+
+        
+        
+        
+        System.out.printf( "String f = \"A\" + \"b\" + 'c' + 1; = ");
+        String fere = "A" + "b" + 'c' + 1;
+        System.out.printf( "%b", fere );
+        System.out.printf( "\n\n\n");
+
+        
+        
+        
+        System.out.printf( "int g = (Double.NEGATIVE_INFINITY > Float.POSITIVE_INFINITY) ? (1-1)/(2>>2) : (2<<2)/(1+1);= ");
+        int gere = (Double.NEGATIVE_INFINITY > Float.POSITIVE_INFINITY) ? (1-1)/(2>>2) 
+         : (2<<2)/(1+1); 
+        System.out.printf( "%b", gere );
+        System.out.printf( "\n\n\n");
+
+        System.out.printf( "double h = (byte)((( 0xA5 | 0x5A ) & 0x18 ) ^ 0x32 ); = ");
+        double here = (byte)((( 0xA5 | 0x5A ) & 0x18 ) ^ 0x32 );
+        System.out.printf( "%b", here );
+        System.out.printf( "\n\n\n");
+
+        
+        
+       /* 
+        System.out.printf( "Integer i = (long)((Long.MAX_VALUE ^ Long.MIN_VALUE) * Character.MIN_VALUE); = ");
+        Integer iere = (long)((Long.MAX_VALUE ^ Long.MIN_VALUE) * Character.MIN_VALUE);
+        System.out.printf( "%b", iere );
+        System.out.printf( "\n\n\n");
+        */
+        
+        
+        
+        System.out.printf( "Void j = null; = ");
+        Void jere = null; 
+        System.out.printf( "%b", jere );
+        System.out.printf( "\n\n\n");
+
+        
+        
+        
+        System.out.printf( "----- Seite 19 -----\n\n");
+
+        System.out.printf( "float f = ((1.0/3.0)*3.0)>10.0 ? Float.NaN*Float.NEGATIVE_INFINITY : 1f; = ");
+        float fsere = ((1.0/3.0)*3.0)>10.0 ? Float.NaN*Float.NEGATIVE_INFINITY : 1f;
+        System.out.printf( "%.2f", fsere ); 
+        System.out.printf( "\n\n\n");
+
+        
+        
+        
+        System.out.printf( "Byte g = (byte)( (Long.MAX_VALUE ^ Long.MIN_VALUE) * Character.MIN_VALUE ); = ");
+        Byte grill = (byte)( (Long.MAX_VALUE ^ Long.MIN_VALUE) * Character.MIN_VALUE );
+        System.out.printf( "%s", grill );
+        System.out.printf( "\n\n\n");
+
+        
+        
+        
+        System.out.printf( "char h = (char)( 'a' + 2*('y'-'w') ); = ");
+        char hrill = (char)( 'a' + 2*('y'-'w') );
+        System.out.printf( "%c", hrill );
+        System.out.printf( "\n\n\n");
+
+        
+        
+        
+        System.out.printf( "float i = (float)( (3/2)*(4/3)*(8/4) ); = ");
+        float irill = (float)( (3/2)*(4/3)*(8/4) );
+        System.out.printf( "%.2f", irill ); 
+        System.out.printf( "\n\n\n");
+
+        
+        
+        
+        System.out.printf( "Void j = null; = ");
+        Void jrule = null;
+        System.out.print( jrule ); 
+        System.out.printf( "\n\n\n");
+
+        System.out.printf( "----- Seite 20 -----\n\n");
+
+        System.out.printf( "for ( char a=Character.MAX_VALUE; a++ > Character.MIN_VALUE; ) System.out.printf( \"%%d \", (long)a ); = ");
+        for ( char arule =Character.MAX_VALUE; arule++ > Character.MIN_VALUE; ) 
+         System.out.printf( "%d ", (long)arule ); 
+        System.out.printf( "\n\n\n");
+
+        
+        
+        
+        System.out.printf( "for ( int b : new int[]{ 16, 32, 48, 64 } ) System.out.printf( \"%%x \", b ); = ");
+        for ( int brule : new int[]{ 16, 32, 48, 64 } ) System.out.printf( "%x ", brule ); 
+        System.out.printf( "\n\n\n");
+
+        
+        
+        
+        System.out.printf( "byte c=0x11; do System.out.printf( \"%%d \", c ); while( --c>0xab ); = ");
+        byte crule=0x11; 
+        do System.out.printf( "%d ", c ); while( --c>0xab );
+                
+        
+        long dreal = 4;
+        do { System.out.printf( "%d ", d ); } while( dreal-- - --dreal > 1<<2 );
 
     }//main
 }//class
