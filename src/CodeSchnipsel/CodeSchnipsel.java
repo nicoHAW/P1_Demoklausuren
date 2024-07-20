@@ -221,8 +221,6 @@ public class CodeSchnipsel {
         System.out.printf( " int vali = 1<<2 != 2>>1 ? 1<<2 : 2>>>1; = "); 
         int vali = 1<<2 != 2>>1 ? 1<<2 : 2>>>1;
         System.out.printf( "%d", vali );
-
-        System.out.printf( "\n\n\n");   
         
         
         System.out.printf("\n\nErklärung\n");
@@ -248,29 +246,37 @@ public class CodeSchnipsel {
         Boolean a = !((( true && false) ^ false ) || true );
         System.out.printf( "%s", a );
 
-        System.out.printf( "\n\n");   
+        System.out.printf( "\n\n\n");  
         
 
         System.out.printf( "Boolean bb = ( !( true ^ true )) || ( 42/0 < Long.MAX_VALUE );  = "); 
         Boolean bb = ( !( true ^ true )) || ( 42/0 < Long.MAX_VALUE );
         System.out.printf( "%s", bb );
 
-        System.out.printf( "\n\n");   
+        System.out.printf( "\n\n\n");   
         
 
+        
         
         System.out.println(" Byte ccc = (byte)( Byte.MIN_VALUE < Character.MIN_VALUE ? 0 % 1 : 1 % 0 ) = "); 
         Byte ccc = (byte)( Byte.MIN_VALUE < Character.MIN_VALUE ? 0%1 : 1%0 );
         System.out.printf( "%s", ccc );
+        
+        System.out.printf("\n\nErklärung");
+        System.out.printf("\nByte.MIN_VALUE = ", Byte.MIN_VALUE);
+        System.out.printf("\nCharacter.MIN_VALUEE = ", Character.MIN_VALUE);
 
-        System.out.printf( "\n\n");   
+        System.out.printf( "\n\n\n");  
+        
+        
         
 
         System.out.printf("Character d = (char)( 3 + 'n' );  = "); 
         Character d = (char)( 3 + 'n' );
         System.out.printf( "%c", d );
 
-        System.out.printf( "\n\n");   
+        System.out.printf( "\n\n\n");        
+        
         
 
         
@@ -278,65 +284,73 @@ public class CodeSchnipsel {
         String e = "n" + 2;
         System.out.printf( "%s", e );
 
-        System.out.printf( "\n\n");   
+        System.out.printf( "\n\n\n"); 
         
 
+        
         
         System.out.printf( "int ff = (byte)(1) + (char)(2);  = "); 
         int ff = (byte)(1) + (char)(2);
         System.out.printf( "%d", ff );
 
-        System.out.printf( "\n\n");   
+        System.out.printf( "\n\n\n"); 
         
 
+        
         
         System.out.printf( " int g = 1*2*3/*4*5*/-6;  = "); 
         int g = 1*2*3/*4*5*/-6;
         System.out.printf( "%d", g );
 
-        System.out.printf( "\n\n");   
+        System.out.printf( "\n\n\n");  
         
 
+        
         System.out.printf("int h = 1<<2 != 2>>1 ? 1<<2 : 2>>>1;  = "); 
         int h = 1<<2 != 2>>1 ? 1<<2 : 2>>>1;
         System.out.printf( "%d", h );
 
-        System.out.printf( "\n\n");   
+        System.out.printf( "\n\n\n");  
         
 
+        
         System.out.printf(" long i = (Float.NEGATIVE_INFINITY < Float.POSITIVE_INFINITY) ? -1 : +1; = "); 
         long i = (Float.NEGATIVE_INFINITY < Float.POSITIVE_INFINITY) ? -1 : +1;
         System.out.printf( "%d", i );
 
-        System.out.printf( "\n\n");   
+        System.out.printf( "\n\n\n");  
         
 
+        
         System.out.printf("float j = (float)( (3/2)*(4/3)*(8/4) );  = "); 
         float j = (float)( (3/2)*(4/3)*(8/4) );
         System.out.printf( "%.2f", j );
 
-        System.out.printf( "\n\n");   
+        System.out.printf( "\n\n\n"); 
         
 
+        
         System.out.printf("Void jj = null; = "); 
         Void jj = null;
         System.out.print( jj );
 
-        System.out.printf( "\n\n");   
+        System.out.printf( "\n\n\n"); 
+        
         
 
         System.out.printf("Boolean aa = (( !true ^ !!true ) || true ) ^ false;  = "); 
         Boolean aa = (( !true ^ !!true ) || true ) ^ false;
         System.out.printf( "%s", aa );
 
-        System.out.printf( "\n\n");   
+        System.out.printf( "\n\n\n");
+        
         
 
         System.out.printf("Boolean bbb = (( false != true ) == ( false ^ true )) || false = "); 
         Boolean bbb = (( false != true ) == ( false ^ true )) || false;
         System.out.printf( "%s", bbb );
 
-        System.out.printf( "\n\n");   
+        System.out.printf( "\n\n\n"); 
         
 
         
@@ -344,7 +358,7 @@ public class CodeSchnipsel {
         Byte cccc = (byte)( Short.MIN_VALUE < Character.MIN_VALUE ? 7%-3 : -6%4 );
         System.out.printf( "%s", cccc );
 
-        System.out.printf( "\n\n");   
+        System.out.printf( "\n\n\n"); 
         
 
         
@@ -352,7 +366,7 @@ public class CodeSchnipsel {
         Character dd = (char)( (short)(-2) + 'e' - (char)(1) );
         System.out.printf( "%c", dd );
 
-        System.out.printf( "\n\n");   
+        System.out.printf( "\n\n\n"); 
         
 
         
@@ -360,15 +374,17 @@ public class CodeSchnipsel {
         String ea = "p" + 1;
         System.out.printf( "%s", ea );
 
-        System.out.printf( "\n\n");   
+        System.out.printf( "\n\n\n"); 
         
 
+        
         
         System.out.printf("int fa = Character.MAX_VALUE | 0xFF000000 | 0x00FF0000;  = "); 
         int fa = Character.MAX_VALUE | 0xFF000000 | 0x00FF0000;
         System.out.printf( "%d", fa );
 
-        System.out.printf( "\n\n");   
+        System.out.printf( "\n\n\n"); 
+        
         
 
         
@@ -377,7 +393,8 @@ public class CodeSchnipsel {
         System.out.printf( "%d", ga );
 
 
-        System.out.printf( "\n\n");   
+        System.out.printf( "\n\n\n"); 
+        
         
         
         
@@ -391,7 +408,8 @@ public class CodeSchnipsel {
                 ); 
         System.out.printf( "%d", ha );
 
-        System.out.printf( "\n\n");   
+        System.out.printf( "\n\n\n"); 
+        
         
         
         
@@ -405,13 +423,17 @@ public class CodeSchnipsel {
         double iq = ( (17D/11D)*(7D/5D)*(3D/2D) ) + 0.23F;
         System.out.printf( "%.2f", iq );
 
-        System.out.printf("\n\n");   
+        System.out.printf( "\n\n\n"); 
+
+        
+        
         
         System.out.println("Void jb = null = ");
         Void jb = null;
         System.out.print( jb );
 
-        System.out.printf("\n\n");   
+        System.out.printf( "\n\n\n"); 
+
         
 
         
@@ -419,15 +441,17 @@ public class CodeSchnipsel {
         Boolean ab = ( !( !( true != false ) && false ) || true );
         System.out.printf( "%s", ab );
 
-        System.out.printf( "\n\n");   
+        System.out.printf( "\n\n\n"); 
         
 
+        
         
         System.out.printf("Boolean bc = ( !( true != true ) || ( 42/0 < Long.MAX_VALUE ));  = "); 
         Boolean bc = ( !( true != true ) || ( 42/0 < Long.MAX_VALUE ));
         System.out.printf( "%s", bc );
 
-        System.out.printf( "\n\n");   
+        System.out.printf( "\n\n\n"); 
+
         
 
         
@@ -436,16 +460,18 @@ public class CodeSchnipsel {
         System.out.printf( "%s", cb );
 
 
-        System.out.printf( "\n\n");   
+        System.out.printf( "\n\n\n"); 
         
 
+        
         
         System.out.printf("Character dc = (char)( (short)(-1) + 'x' - (char)(0) );  = "); 
         Character dc = (char)( (short)(-1) + 'x' - (char)(0) );
         System.out.printf( "%c", dc );
 
 
-        System.out.printf( "\n\n");   
+        System.out.printf( "\n\n\n"); 
+
         
 
         
@@ -453,7 +479,8 @@ public class CodeSchnipsel {
         String ec = "x" + 2;
         System.out.printf( "%s", ec );
 
-        System.out.printf( "\n\n");   
+        System.out.printf( "\n\n\n"); 
+
         
 
         
@@ -461,7 +488,8 @@ public class CodeSchnipsel {
         int fc = (byte)(5) + (char)(7) + (short)(-2);
         System.out.printf( "%d", fc );
 
-        System.out.printf( "\n\n");   
+        System.out.printf( "\n\n\n"); 
+
         
 
 
@@ -471,7 +499,8 @@ public class CodeSchnipsel {
         System.out.printf( "%d", gc );
 
 
-        System.out.printf( "\n\n");   
+        System.out.printf( "\n\n\n"); 
+
         
 
         
@@ -479,7 +508,8 @@ public class CodeSchnipsel {
         long hc = (Float.NEGATIVE_INFINITY == Float.POSITIVE_INFINITY) ? -1 : +1;
         System.out.printf( "%d", hc );
 
-        System.out.printf( "\n\n");   
+        System.out.printf( "\n\n\n"); 
+
         
 
         
@@ -487,7 +517,8 @@ public class CodeSchnipsel {
         double ic = (double)( (13/7)*(7/5)*(5/3) ) + 0.5F;
         System.out.printf( "%.2f", ic );
 
-        System.out.printf( "\n\n");   
+        System.out.printf( "\n\n\n"); 
+
         
 
         
@@ -495,7 +526,8 @@ public class CodeSchnipsel {
         Void jc = null;
         System.out.print( jc );
 
-        System.out.printf( "\n\n");   
+        System.out.printf( "\n\n\n"); 
+
         
 
         
@@ -503,7 +535,8 @@ public class CodeSchnipsel {
         String sc = "a" + 3;
         System.out.printf( "%s", sc );
 
-        System.out.printf( "\n\n");   
+        System.out.printf( "\n\n\n"); 
+
         
 
         
@@ -511,7 +544,8 @@ public class CodeSchnipsel {
         Character cf = (char)( 2 + 'x' );
         System.out.printf( "%c", cf );
 
-        System.out.printf( "\n\n");   
+        System.out.printf( "\n\n\n"); 
+
         
 
         
@@ -519,7 +553,8 @@ public class CodeSchnipsel {
         int valp = (short)(2) + (char)(3);
         System.out.printf( "%d", valp );
 
-        System.out.printf( "\n\n");   
+        System.out.printf( "\n\n\n"); 
+
         
 
         
@@ -527,7 +562,8 @@ public class CodeSchnipsel {
         char cff = (char)( 'h' - 2*('d'-'b') );
         System.out.printf( "%c", cff );
 
-        System.out.printf( "\n\n");   
+        System.out.printf( "\n\n\n"); 
+
         
 
         
@@ -541,7 +577,8 @@ public class CodeSchnipsel {
                 );
         System.out.printf( "%d", valz );
 
-        System.out.printf( "\n\n");   
+        System.out.printf( "\n\n\n"); 
+
         
 
         
@@ -549,7 +586,8 @@ public class CodeSchnipsel {
         byte valnn = (byte)( (0x7e & 0xbd &0xdb & 0xe7 ) ^ 0x87 );
         System.out.printf( "%x", valnn );
 
-        System.out.printf( "\n\n");   
+        System.out.printf( "\n\n\n"); 
+
         
 
         
@@ -564,7 +602,8 @@ public class CodeSchnipsel {
         }else{ System.out.printf( "e" );
         }
 
-        System.out.printf( "\n\n");   
+        System.out.printf( "\n\n\n"); 
+
         
 
         
@@ -572,7 +611,8 @@ public class CodeSchnipsel {
         long valgt = (Long.MIN_VALUE >>> 63) - (Long.MIN_VALUE >> 63);
         System.out.printf( "%d", valgt );
 
-        System.out.printf( "\n\n");   
+        System.out.printf( "\n\n\n"); 
+
         
 
         
@@ -580,8 +620,9 @@ public class CodeSchnipsel {
         int valwfe = 1*2*3/*4*5*/+6;
         System.out.printf( "%d", valwfe );
 
-        System.out.printf( "\n\n");   
+        System.out.printf( "\n\n\n"); 
         
+
 
         System.out.printf("long vagtel = (Float.NEGATIVE_INFINITY < Float.POSITIVE_INFINITY) ? -1 : +1 = "); 
         long vagtel = (Float.NEGATIVE_INFINITY < Float.POSITIVE_INFINITY) ? -1 : +1;
