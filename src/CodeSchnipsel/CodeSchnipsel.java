@@ -320,7 +320,15 @@ public class CodeSchnipsel {
 
         System.out.printf( "\n\n\n");  
         
+        
+        System.out.printf("\n\nErklärung");
+        System.out.printf("\nFloat.NEGATIVE_INFINITY = ", Float.NEGATIVE_INFINITY);
+        System.out.printf("\nCharacter.MIN_VALUEE = ", Character.MIN_VALUE);
 
+        System.out.printf( "\n\n\n");  
+        
+        
+        
         
         System.out.printf("float j = (float)( (3/2)*(4/3)*(8/4) );  = "); 
         float j = (float)( (3/2)*(4/3)*(8/4) );
