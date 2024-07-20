@@ -4,8 +4,10 @@ public class CodeSchnipsel {
 
     public static void main(String[] args) {
 
-
-
+        System.out.printf( "----- PDF: 01_P1_01_CodeSchnipsel.pdf -----\n\n\n");
+        
+        System.out.printf( "----- Seite 1 -----\n\n");
+        
         System.out.printf( "String s = \"a\" + 3 = "); 
         String s = "a" + 3;
         System.out.printf( "%s", s );  //String a + 3 = a3
@@ -152,6 +154,9 @@ public class CodeSchnipsel {
 
         
         
+        System.out.printf( "----- Seite 2 -----\n\n");
+        
+        
         System.out.printf("long valc = (Long.MIN_VALUE >>> 63) - (Long.MIN_VALUE >> 63); = "); 
         long valc = (Long.MIN_VALUE >>> 63) - (Long.MIN_VALUE >> 63);
         System.out.printf( "%d", valc );
@@ -242,6 +247,8 @@ public class CodeSchnipsel {
         System.out.printf( "\n\n\n");
         
         
+        System.out.printf( "----- Seite 3 -----\n\n");
+        
         System.out.printf( "Boolean a = !((( true && false) ^ false ) || true ) = "); 
         Boolean a = !((( true && false) ^ false ) || true );
         System.out.printf( "%s", a );
@@ -295,7 +302,7 @@ public class CodeSchnipsel {
 
         System.out.printf( "\n\n\n"); 
         
-
+        System.out.printf( "----- Seite 4 -----\n\n");
         
         
         System.out.printf( " int g = 1*2*3/*4*5*/-6;  = "); 
@@ -345,6 +352,8 @@ public class CodeSchnipsel {
         System.out.printf( "\n\n\n"); 
         
         
+        System.out.printf( "----- Seite 5 -----\n\n");
+        
 
         System.out.printf("Boolean aa = (( !true ^ !!true ) || true ) ^ false;  = "); 
         Boolean aa = (( !true ^ !!true ) || true ) ^ false;
@@ -384,7 +393,7 @@ public class CodeSchnipsel {
 
         System.out.printf( "\n\n\n"); 
         
-
+        System.out.printf( "----- Seite 6 -----\n\n");
         
         
         System.out.printf("int fa = Character.MAX_VALUE | 0xFF000000 | 0x00FF0000;  = "); 
@@ -443,7 +452,7 @@ public class CodeSchnipsel {
         System.out.printf( "\n\n\n"); 
 
         
-
+        System.out.printf( "----- Seite 7 -----\n\n");
         
         System.out.printf("Boolean ab = ( !( !( true != false ) && false ) || true );  = "); 
         Boolean ab = ( !( !( true != false ) && false ) || true );
@@ -499,16 +508,28 @@ public class CodeSchnipsel {
         System.out.printf( "\n\n\n"); 
 
         
-
+        System.out.printf( "----- Seite 8 -----\n\n");
 
         
         System.out.printf("int gc = ( 1 << 16 ) - Character.MAX_VALUE;  = "); 
         int gc = ( 1 << 16 ) - Character.MAX_VALUE;
         System.out.printf( "%d", gc );
 
-
+        System.out.printf("\n\nErklärung");
+        
+        System.out.printf("\n Character.MAX_VALUE = %d", (int)Character.MAX_VALUE);
+        System.out.printf("\n Character.MAX_VALUE als Bit = %s", Integer.toBinaryString(Character.MAX_VALUE));
+        System.out.printf("\n Character.MAX_VALUE als Hex = 0x%X ", (int) Character.MAX_VALUE);
+        
+        System.out.printf("\n\n 1 << 16 = %d", (int)Character.MAX_VALUE);
+        System.out.printf("\n 1 << 16 als Bit = %s", Integer.toBinaryString(1 << 16));
+        System.out.printf("\n 1 << 16 als Hex = 0x%X", (int)(1 << 16));
+        
+        
+        
         System.out.printf( "\n\n\n"); 
-
+        
+        
         
 
         
@@ -516,6 +537,11 @@ public class CodeSchnipsel {
         long hc = (Float.NEGATIVE_INFINITY == Float.POSITIVE_INFINITY) ? -1 : +1;
         System.out.printf( "%d", hc );
 
+        System.out.printf("\n\nErklärung");
+        System.out.printf("\n Float.NEGATIVE_INFINITY = %f", Float.NEGATIVE_INFINITY);
+        System.out.printf("\n Float.NEGATIVE_INFINITY = %f", Float.POSITIVE_INFINITY);
+        
+        
         System.out.printf( "\n\n\n"); 
 
         
@@ -537,9 +563,9 @@ public class CodeSchnipsel {
         System.out.printf( "\n\n\n"); 
 
         
-
+        System.out.printf( "----- Seite 9 -----\n\n");
         
-        System.out.printf("String sc = \"a\" + 3;  = "); 
+        System.out.printf("String sc = \"a\" + 3; = "); 
         String sc = "a" + 3;
         System.out.printf( "%s", sc );
 
@@ -569,7 +595,7 @@ public class CodeSchnipsel {
         System.out.printf("char cff = (char)( 'h' - 2*('d'-'b') );  = "); 
         char cff = (char)( 'h' - 2*('d'-'b') );
         System.out.printf( "%c", cff );
-
+        
         System.out.printf( "\n\n\n"); 
 
         
@@ -609,16 +635,33 @@ public class CodeSchnipsel {
         }else if( valhr > Long.MAX_VALUE ){ System.out.printf( "g" );
         }else{ System.out.printf( "e" );
         }
+        
+        System.out.printf( "\n\nErklärung:"); 
+        
+        System.out.printf( "\n\nvalhr = %d", valhr);
+        System.out.printf( "\nLong.MAX_VALUE = %d", Long.MAX_VALUE); 
+        System.out.printf( "\nLong.MIN_VALUE = %d", Long.MIN_VALUE); 
+
 
         System.out.printf( "\n\n\n"); 
 
-        
+        System.out.printf( "----- Seite 10 -----\n\n");
 
         
         System.out.printf("long valgt = (Long.MIN_VALUE >>> 63) - (Long.MIN_VALUE >> 63);  = "); 
         long valgt = (Long.MIN_VALUE >>> 63) - (Long.MIN_VALUE >> 63);
         System.out.printf( "%d", valgt );
 
+        System.out.printf( "\n\nErklärung:"); 
+        
+        System.out.printf( "\nLong.MIN_VALUE = %d", Long.MIN_VALUE); 
+        System.out.printf( "\nLong.MIN_VALUE >>> 63 = %d", Long.MIN_VALUE >>> 63);
+        System.out.printf( "\nLong.MIN_VALUE >>> 63 = %s", Long.toBinaryString(Long.MIN_VALUE >>> 63));
+        System.out.printf( "\n\nLong.MIN_VALUE = %d", Long.MIN_VALUE); 
+        System.out.printf( "\nLong.MIN_VALUE >> 63 = %d", Long.MIN_VALUE >> 63);
+        System.out.printf( "\nLong.MIN_VALUE >> 63 = %s", Long.toBinaryString(Long.MIN_VALUE >> 63));
+
+        
         System.out.printf( "\n\n\n"); 
 
         
@@ -635,6 +678,242 @@ public class CodeSchnipsel {
         System.out.printf("long vagtel = (Float.NEGATIVE_INFINITY < Float.POSITIVE_INFINITY) ? -1 : +1 = "); 
         long vagtel = (Float.NEGATIVE_INFINITY < Float.POSITIVE_INFINITY) ? -1 : +1;
         System.out.printf( "%d", vagtel );
+        System.out.printf( "\n\n\n"); 
+        
+        System.out.printf( "----- Seite 11 -----\n\n");
+
+        System.out.printf("Boolean bool = !((( true ^ false) || false ) && true ) = ");
+        Boolean bool = !((( true ^ false) || false ) && true );
+        System.out.printf( "%s", bool );
+        System.out.printf( "\n\n\n");
+
+        
+        
+        System.out.printf("Boolean bool34 = (( false || false) == ( false ^ false )) = ");
+        
+        Boolean bool34 = (( false || false) == ( false ^ false ));
+        System.out.printf( "%s", bool34 );
+        System.out.printf( "\n\n\n");
+        
+        
+        
+        System.out.printf("String svf = \"abcd\" + 1234; = ");
+        
+        String svf = "abcd" + 1234;
+        System.out.printf( "%s", svf );
+        System.out.printf( "\n\n\n");
+
+        
+        
+        System.out.printf( "haracter cvf = (char)( 5 + 'L' ); = ");
+        
+        Character cvf = (char)( 5 + 'L' );
+        System.out.printf( "%c", cvf );
+        System.out.printf( "\n\n\n");
+
+        
+        
+        System.out.printf( "int valdf = (char)( (byte)(1) + (short)(1) + 1L ); = ");
+        
+        int valdf = (char)( (byte)(1) + (short)(1) + 1L );
+        System.out.printf( "%d", valdf );
+        System.out.printf( "\n\n\n");
+
+        
+        
+        System.out.printf( "----- Seite 12 -----\n\n");
+
+        
+        
+        System.out.println( "char chz = (char)( 'e' + 2*('b'-'a') ); = ");
+        
+        char chz = (char)( 'e' + 2*('b'-'a') );
+        System.out.printf( "%c", chz );
+        System.out.printf( "\n\n\n");
+
+        
+        
+        System.out.println( "int valju = (byte)( 131313 % 13 < 0\r\n"
+                + "        ? 1D * 1F\r\n"
+                + "        : 1d + 1f + 01 + 0x1 + 0b1\r\n"
+                + "        ); = ");
+        
+        int valju = (byte)( 131313 % 13 < 0
+        ? 1D * 1F
+        : 1d + 1f + 01 + 0x1 + 0b1
+        );
+        System.out.printf( "%d", valju );
+        System.out.printf( "\n\n\n");
+
+        
+        
+        System.out.printf( "byte valnb = (byte)( Character.MIN_VALUE * Long.MAX_VALUE ); = ");
+        
+        byte valnb = (byte)( Character.MIN_VALUE * Long.MAX_VALUE );
+        System.out.printf( "%x", valnb );
+        System.out.printf( "\n\n\n");
+
+        
+        
+        System.out.printf( "int valmkj = (int)( ( 2 * (3/1) * (float)( 3/2 ))); = ");
+        
+        int valmkj = (int)( ( 2 * (3/1) * (float)( 3/2 )));
+        System.out.printf( "%d", valmkj );
+        System.out.printf( "\n\n\n");
+
+        
+        
+        System.out.printf( "long valsw = (Float.NEGATIVE_INFINITY < Float.POSITIVE_INFINITY) ? -1 : +1; = ");
+        
+        long valsw = (Float.NEGATIVE_INFINITY < Float.POSITIVE_INFINITY) ? -1 : +1;
+        System.out.printf( "%d", valsw );
+        System.out.printf( "\n\n\n");
+
+        System.out.printf( "----- Seite 13 -----\n\n");
+
+        
+        
+        System.out.printf( " int valde = 1*2*3/*4*5*/+6; = ");
+        
+        int valde = 1*2*3/*4*5*/+6;
+        System.out.printf( "%d", valde );
+        System.out.printf( "\n\n\n");
+
+        
+        
+        System.out.println( "Byte bon = (byte)( Byte.MIN_VALUE < Character.MIN_VALUE ? 0%1 : 1%0 ) = ");
+        
+        Byte bon = (byte)( Byte.MIN_VALUE < Character.MIN_VALUE ? 0%1 : 1%0 );
+        System.out.printf( "%s", bon );
+        System.out.printf( "\n\n\n");
+
+        
+        
+        System.out.printf( "Void von = null; = ");
+        
+        Void von = null;
+        System.out.print( von );
+        System.out.printf( "\n\n\n");
+
+        System.out.printf( "----- Seite 14 -----\n\n");
+
+        
+        
+        System.out.printf( "Boolean boolon = !((( true ^ false) || false ) && true ); = ");
+        
+        Boolean boolon = !((( true ^ false) || false ) && true );
+        System.out.printf( "%s", boolon );
+        System.out.printf( "\n\n\n");
+
+        
+        
+        System.out.printf( " Boolean boolom = !(( true ^ false) != ( true != false )) ? null : true|false; = ");
+        
+        Boolean boolom = !(( true ^ false) != ( true != false )) ? null : true|false;
+        System.out.printf( "%s", boolom ); 
+        System.out.printf( "\n\n\n");
+
+        
+        
+        System.out.printf( "String ser = \"z\" + 0; = ");
+        
+        String ser = "z" + 0;
+        System.out.printf( "%s", ser );
+        System.out.printf( "\n\n\n");
+
+        
+        
+        System.out.println( "Character cer = (char)( 0 + 'z' ); = ");
+        
+        Character cer = (char)( 0 + 'z' );
+        System.out.printf( "%c", cer );
+        System.out.printf( "\n\n\n");
+
+        
+        
+        System.out.printf( "int valer = (short)(1) + (char)(1); = ");
+        
+        int valer = (short)(1) + (char)(1);
+        System.out.printf( "%d", valer );
+        System.out.printf( "\n\n\n");
+
+        
+        
+        System.out.println( "char cwe = (char)( 'z' - 2*('y'-'x') ); = ");
+        
+        char cwe = (char)( 'z' - 2*('y'-'x') );
+        System.out.printf( "%c", cwe );
+        System.out.printf( "\n\n\n");
+
+        System.out.printf( "----- Seite 15 -----\n\n");
+
+        
+        
+        System.out.println( "byte valwe = (byte)( 171717%17 < 17\r\n"
+                + "        ? 1D*1F\r\n"
+                + "        : Float.NEGATIVE_INFINITY / Double.POSITIVE_INFINITY\r\n"
+                + "        ); = ");
+        
+        byte valwe = (byte)( 171717%17 < 17
+        ? 1D*1F
+        : Float.NEGATIVE_INFINITY / Double.POSITIVE_INFINITY
+        );
+        System.out.printf( "%d", valwe );
+        System.out.printf( "\n\n\n");
+
+        
+        
+        System.out.printf( "byte valqw = (byte)( (0x7e & 0xbd &0xdb & 0xe7 ) ^ 0xc3 ); = ");
+        
+        byte valqw = (byte)( (0x7e & 0xbd &0xdb & 0xe7 ) ^ 0xc3 );
+        System.out.printf( "%x", valqw );
+        System.out.printf( "\n\n\n");
+
+        
+        
+        System.out.printf( "long valgh = ( Long.MAX_VALUE + Long.MIN_VALUE );\r\n"
+                + "        if( valgh < Long.MIN_VALUE ){ System.out.printf( \"k\" ); \r\n"
+                + "        }else if( valgh > Long.MAX_VALUE ){ System.out.printf( \"g\" ); \r\n"
+                + "        }else{ System.out.printf( \"d\" ); = ");
+        
+        long valgh = ( Long.MAX_VALUE + Long.MIN_VALUE );
+        if( valgh < Long.MIN_VALUE ){ System.out.printf( "k" ); 
+        }else if( valgh > Long.MAX_VALUE ){ System.out.printf( "g" ); 
+        }else{ System.out.printf( "d" ); 
+        } 
+        System.out.printf( "\n\n\n");
+        
+        
+        System.out.printf( "long valjn = (Long.MIN_VALUE >>> 63) - (Long.MIN_VALUE >> 63); = ");
+        
+        long valjn = (Long.MIN_VALUE >>> 63) - (Long.MIN_VALUE >> 63);
+        System.out.printf( "%d", valjn ); 
+        System.out.printf( "\n\n\n");
+        
+        
+        
+        System.out.printf( "int valnj = 6>>>5 > 4 ? 3 >> 2 : 1 >>> 0; = ");
+        
+        int valnj = 6>>>5 > 4 ? 3 >> 2 : 1 >>> 0;
+        System.out.printf( "%d", valnj ); 
+        System.out.printf( "\n\n\n");
+
+        
+        
+        System.out.println("Byte brt = (byte)( Byte.MIN_VALUE < Character.MIN_VALUE ? 0%1 : 1%0 ); = ");
+        
+        Byte brt = (byte)( Byte.MIN_VALUE < Character.MIN_VALUE ? 0%1 : 1%0 );
+        System.out.printf( "%s", brt );
+        System.out.printf( "\n\n\n");
+
+        
+        
+        System.out.printf("int valrt = 1<<2 != 2>>1 ? 1<<2 : 2>>>1 = ");
+        
+        int valrt = 1<<2 != 2>>1 ? 1<<2 : 2>>>1;
+        System.out.printf( "%d", valrt ); 
+        System.out.printf( "\n\n\n");
+                
 
     }//main
 }//class
