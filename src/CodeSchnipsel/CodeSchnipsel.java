@@ -10,15 +10,13 @@ public class CodeSchnipsel {
         String s = "a" + 3;
         System.out.printf( "%s", s );  //String a + 3 = a3
 
-        System.out.printf( "\n\n");        
-
+        System.out.printf( "\n\n\n");        
 
         
         System.out.printf("Character c = (char)( 3 + 'a' ) = "); 
         Character c = (char)( 3 + 'a' );
         System.out.printf( "%c", c ); //Char wie Zahlen a + 3(c) = d
 
-    
         
         System.out.printf("\n\nWie Ausgaben zuvor, aber statt Ausgabe \\c (char) mit \\s(String)  = "); 
         Character cc = (char)( 3 + 'a' );
@@ -29,7 +27,7 @@ public class CodeSchnipsel {
         Character ccb = (char)( 3 + 'a' );
         System.out.printf( "VERURSACHT ERROR" ); //als string auch Buchstabe. Als %d geht nicht.
 
-        System.out.printf( "\n\n");        
+        System.out.printf( "\n\n\n");        
       
         
         System.out.printf("int val = (short)(2) + (char)(3)  = "); 
@@ -39,21 +37,20 @@ public class CodeSchnipsel {
         System.out.printf("\n\n");   
 
         
-        System.out.printf("int vald= (short)(2) + (char)(3)  = "); 
+        System.out.printf("Wie zuvor aber Ausgabe als String = "); 
         int vald= (short)(2) + (char)(3);
-        System.out.printf("Ausgabe als s: %s", val ); // Zahl als String
+        System.out.printf("String: %s", val ); // Zahl als String
 
         System.out.printf("\n\n");   
 
         
-        System.out.printf("int valdd = (short)(2) + (char)(3)  = "); 
+        System.out.printf("Wie zuvor aber Ausgabe als Char = "); 
         int valdd = (short)(2) + (char)(3);
-        System.out.printf("Ausgabe als c: %c", val ); // als Char wird ?Zeichen ausgegeben.
+        System.out.printf("Char: %c", val ); // als Char wird ?Zeichen ausgegeben.
 
-        System.out.printf("\n\n");        
+        System.out.printf( "\n\n\n");        
         
        
-
         
         
         System.out.printf(" char f = (char)( 'e' - 2*('c'-'a') ); = "); 
@@ -63,12 +60,15 @@ public class CodeSchnipsel {
         System.out.printf("\n\n"); 
         
         
-        System.out.printf("Wie oben aber Ausgabe als String = "); 
+        System.out.printf("Wie zuvor aber Ausgabe als String = "); 
         char ffb = (char)( 'e' - 2*('c'-'a') ); /* e = 5 ; c = 3 ; a = 1 ; b = 2 ; d = 4
                                                  * c-a = b ; 2*b = d , e-d = 1
                                                  */
         System.out.printf("%s", ffb ); //auch als String Ausgabe a
 
+        System.out.printf("\n\nErklärung: e = 5 ; c = 3 ; a = 1 ; b = 2 ; d = 4\r\n"
+                        + "             c-a = b ; 2*b = d , e-d = 1 ");  
+        System.out.printf( "\n\n\n");  
         
         System.out.printf("Wie oben aber Ausgabe als Decimal = "); 
         char ffbb = (char)( 'e' - 2*('c'-'a') ); /* e = 5 ; c = 3 ; a = 1 ; b = 2 ; d = 4
@@ -79,39 +79,76 @@ public class CodeSchnipsel {
         
         
         
-        System.out.printf("\n\n"); 
+        System.out.printf("\n\n\n"); 
 
         
         
         
         System.out.println("byte valg = (byte)( 414141%41 < 41) ? 1F*1D : Float.NEGATIVE_INFINITY / Double.POSITIVE_INFINITY = "); 
-        byte valg = (byte)( 414141%41 < 41
-                ? 1F*1D
-                        : Float.NEGATIVE_INFINITY / Double.POSITIVE_INFINITY 
+        byte valg = (byte)( 414141%41 < 41  //kann gar nicht 41 sein, daher auf jeden fall kleiner
+                ? 1F*1D                     //1F = 1Float, 1D = 1Double, 1*1 = 1
+                : Float.NEGATIVE_INFINITY / Double.POSITIVE_INFINITY 
                 );
         System.out.printf("%d", valg );
-
-        System.out.printf("\n\n");   
+        System.out.println("Erklärung: 1F = 1Float, 1D = 1Double, 1*1 = 1");
+        
+        
+        
+        
+        System.out.printf("\n\n\n");   
 
         System.out.printf(" byte vala = (byte)( (0x7e & 0xbd &0xdb & 0xe7 ) ^ 0x87 ) = "); 
         byte vala = (byte)( (0x7e & 0xbd &0xdb & 0xe7 ) ^ 0x87 );
         System.out.printf("%x", vala );
 
-
-        System.out.printf("\n\n");   
+        System.out.printf("\nAchtung Falle: 0x7e & 0xbd &0xdb & 0xe7 hebt sich auf. \r\n"
+                + "         * \r\n"
+                + "         * Bitwise Zuordnung: \r\n"
+                + "         * 0x7e =      0111 1110\r\n"
+                + "         * 0xbd =    & 1011 1101  & = AND-Verknüpfung\r\n"
+                + "         * 0xdb =    & 1101 1011 & = AND-Verknüpfung\r\n"
+                + "         * 0xe7 =    & 1110 0111  & = AND-Verknüpfung\r\n"
+                + "         *----------------------\r\n"
+                + "         *             0000 0000\r\n"
+                + "         * 0xc3 =    ^ 1100 0011  ^ = XOR-Verknüpfung\r\n"
+                + "         * ---------------------\r\n"
+                + "         * Ergebnis:   1100 0011");
+        /* 
+         * Achtung Falle: 0x7e & 0xbd &0xdb & 0xe7 hebt sich auf. 
+         * 
+         * Bitwise Zuordnung: 
+         * 0x7e =      0111 1110
+         * 0xbd =    & 1011 1101
+         * 0xdb =    & 1101 1011
+         * 0xe7 =    & 1110 0111
+         *----------------------
+         *             0000 0000
+         * 0xc3 =    ^ 1100 0011
+         * ---------------------
+         * Ergebnis:   1100 0011
+         * 
+         */
+        
+        
+        System.out.printf("\n\n\n");   
 
         System.out.printf( " long valb = ( Long.MAX_VALUE + Long.MIN_VALUE );\n"
                 + "        if( valb < Long.MIN_VALUE ){ System.out.printf( \"s\" )\n"
                 + "        }else if( valb > Long.MAX_VALUE ){ System.out.printf( \"g\" );\n"
                 + "        }else{ System.out.printf( \"e\" );\r\n"
                 + "        } = "); 
-        long valb = ( Long.MAX_VALUE + Long.MIN_VALUE );
+        long valb = ( Long.MAX_VALUE + Long.MIN_VALUE ); //valb = 1 
         if( valb < Long.MIN_VALUE ){ System.out.printf( "s" );
         }else if( valb > Long.MAX_VALUE ){ System.out.printf( "g" );
         }else{ System.out.printf( "e" );
         }
 
-        System.out.printf( "\n\n");  
+        System.out.println("Erklärung");
+        System.out.println("Long.MAX_VALUE = " + Long.MAX_VALUE); 
+        System.out.println("Long.MIN_VALUE = " + Long.MIN_VALUE);
+        System.out.println("valb = " + valb);
+       
+        System.out.printf( "\n\n\n");  
 
         
         
