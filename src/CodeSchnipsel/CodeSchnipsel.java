@@ -143,7 +143,7 @@ public class CodeSchnipsel {
         }else{ System.out.printf( "e" );
         }
 
-        System.out.println("Erklärung");
+        System.out.println("\n\nErklärung");
         System.out.println("Long.MAX_VALUE = " + Long.MAX_VALUE); 
         System.out.println("Long.MIN_VALUE = " + Long.MIN_VALUE);
         System.out.println("valb = " + valb);
@@ -156,36 +156,65 @@ public class CodeSchnipsel {
         long valc = (Long.MIN_VALUE >>> 63) - (Long.MIN_VALUE >> 63);
         System.out.printf( "%d", valc );
 
-
-        System.out.printf( "\n\n");   
+        System.out.println("\n\nErklärung");
+        System.out.println("Long.MIN_VALUE = " + Long.MIN_VALUE); 
+        System.out.println("Long.MIN_VALUE >>> 63 = " + (Long.MIN_VALUE >>> 63));
+        System.out.println("Long.MIN_VALUE = " + Long.MIN_VALUE); 
+        System.out.println("Long.MIN_VALUE >> 63 = " + (Long.MIN_VALUE >> 63));
+        System.out.println("1-(-1) = valc");
+        System.out.println("valc = " + valc);
+        
+        System.out.printf( "\n\n\n");   
 
         
         System.out.printf( " int valf = 1*2*3/*4*5*/+6; = "); 
         int valf = 1*2*3/*4*5*/+6;
         System.out.printf( "%d", valf );
 
-        System.out.printf( "\n\n");   
+        System.out.printf( "\n\n\n");   
         
         
         System.out.printf( " long vale = (Float.NEGATIVE_INFINITY < Float.POSITIVE_INFINITY) ? -1 : +1; = "); 
         long vale = (Float.NEGATIVE_INFINITY < Float.POSITIVE_INFINITY) ? -1 : +1;
         System.out.printf( "%d", vale );
 
-        System.out.printf( "\n\n");   
+        System.out.printf( "\n\n\n");   
         
         
         System.out.printf( " int valh = 6>>>5 > 4 ? 3 >> 2 : 1 >>> 0; = "); 
         int valh = 6>>>5 > 4 ? 3 >> 2 : 1 >>> 0;
         System.out.printf( "%d", valh );
 
-        System.out.printf( "\n\n");   
+        System.out.printf("\n\nErklärung\n");
+        System.out.printf("\n 6>>>5 = " + (6>>>5));
+        System.out.printf("\n 6 als Bit = %4s", Integer.toBinaryString(6));
+        System.out.printf("\n 6>>>5 6 als Bit = %4s",  Integer.toBinaryString(6>>>5));
+        System.out.printf("\n 6>>>5 = " + (6>>>5));
+        System.out.printf("\n\n 3 >> 2 = " + (3));
+        System.out.printf("\n 3 als Bit = %4s",  Integer.toBinaryString(3));
+        System.out.printf("\n 3 >> 2 als Bit = %4s",  Integer.toBinaryString(3 >> 2));
+        System.out.printf("\n 3 >> 2 = " + (3 >> 2));
+        System.out.printf("\n 1 >>> 0 = " + (1));
+        System.out.printf("\n 1 als Bi = %4s",  Integer.toBinaryString(1));
+        System.out.printf("\n 1 >>> 0 als Bit = %4s",  Integer.toBinaryString(1 >>> 0));
+        System.out.printf("\n 1 >>> 0 = " + (1 >>> 0));
+        
+        
+        System.out.printf( "\n\n\n");      
         
 
         System.out.println( "Byte b = (byte)( Byte.MIN_VALUE < Character.MIN_VALUE ? 0%1 : 1%0 ) = "); 
         Byte b = (byte)( Byte.MIN_VALUE < Character.MIN_VALUE ? 0%1 : 1%0 );
         System.out.printf( "%s", b );
-
-        System.out.printf( "\n\n");   
+        
+        System.out.printf("\n\nErklärung\n");
+        System.out.printf("Byte.MIN_VALUEe = " + Byte.MIN_VALUE);
+        System.out.printf("Character.MIN_VALUE" + Character.MIN_VALUE);
+        System.out.printf("0 Modulo 1 = 0:1 = 0 R0");
+        
+        
+        
+        System.out.printf( "\n\n\n");   
         
 
         
@@ -193,9 +222,27 @@ public class CodeSchnipsel {
         int vali = 1<<2 != 2>>1 ? 1<<2 : 2>>>1;
         System.out.printf( "%d", vali );
 
-        System.out.printf( "\n\n");   
+        System.out.printf( "\n\n\n");   
         
-
+        
+        System.out.printf("\n\nErklärung\n");
+        System.out.printf("\n 1<<2 = " + (1<<2));
+        System.out.printf("\n 1 als Bit = %4s", Integer.toBinaryString(1));
+        System.out.printf("\n 1<<2 als Bit = %4s",  Integer.toBinaryString(1<<2));
+        
+        System.out.printf("\n\n 2>>1 = " + (2>>1));
+        System.out.printf("\n 1 als Bit = %4s", Integer.toBinaryString(1));
+        System.out.printf("\n 2>>1 als Bit = %4s",  Integer.toBinaryString(1<<2));
+        
+        System.out.printf("\n\n 2>>>1 = " + (2>>>1));
+        System.out.printf("\n 2>>>1 als Bit = %4s",  Integer.toBinaryString(2>>>1));
+        System.out.printf("\n\n (-2)>>>1 = " + (-2>>>1));
+        System.out.printf("\n -2 als Bit = %4s",  Integer.toBinaryString(-2));
+        System.out.printf("\n (-2)>>>1 als Bit = %4s",  Integer.toBinaryString(-2>>>1));
+        
+        
+        System.out.printf( "\n\n\n");
+        
         
         System.out.printf( "Boolean a = !((( true && false) ^ false ) || true ) = "); 
         Boolean a = !((( true && false) ^ false ) || true );
