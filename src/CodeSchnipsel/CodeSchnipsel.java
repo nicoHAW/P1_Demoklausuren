@@ -680,8 +680,36 @@ public class CodeSchnipsel {
         System.out.printf( "%d", vagtel );
         System.out.printf( "\n\n\n"); 
         
+        
+        
+        System.out.printf("int valdede = 6>>>5 > 4 ? 3 >> 2 : 1 >>> 0; = ");
+        int valdede = 6>>>5 > 4 ? 3 >> 2 : 1 >>> 0;
+        System.out.printf( "%d", valdede );
+        System.out.printf( "\n\n\n"); 
+        
+        
+        
+        
+        System.out.printf("Byte brz = (byte)( Byte.MIN_VALUE < Character.MIN_VALUE ? 0%%1 : 1%%0 ) = ");
+        Byte brz = (byte)( Byte.MIN_VALUE < Character.MIN_VALUE ? 0%1 : 1%0 );
+        System.out.printf( "%s", brz );
+        System.out.printf( "\n\n\n"); 
+        
+        
+        
+        
+        System.out.printf("int val = 1<<2 != 2>>1 ? 1<<2 : 2>>>1; = ");
+        int valrtz = 1<<2 != 2>>1 ? 1<<2 : 2>>>1;
+        System.out.printf( "%d", valrtz );
+        System.out.printf( "\n\n\n"); 
+        
+        
+        
+        
         System.out.printf( "----- Seite 11 -----\n\n");
 
+        
+        
         System.out.printf("Boolean bool = !((( true ^ false) || false ) && true ) = ");
         Boolean bool = !((( true ^ false) || false ) && true );
         System.out.printf( "%s", bool );
@@ -709,7 +737,13 @@ public class CodeSchnipsel {
         
         Character cvf = (char)( 5 + 'L' );
         System.out.printf( "%c", cvf );
+        
+        System.out.printf( "\n\nErklärung", cvf );
+        System.out.printf( "L: char = %c | int = %d ", (char)'L', (int)'L');
+        System.out.printf( "l: char = %c | int = %d ", (char)'l', (int)'l');
+        
         System.out.printf( "\n\n\n");
+         
 
         
         
@@ -733,7 +767,7 @@ public class CodeSchnipsel {
 
         
         
-        System.out.println( "int valju = (byte)( 131313 % 13 < 0\r\n"
+        System.out.printf( "int valju = (byte)( 131313 %% 13 < 0\r\n"
                 + "        ? 1D * 1F\r\n"
                 + "        : 1d + 1f + 01 + 0x1 + 0b1\r\n"
                 + "        ); = ");
