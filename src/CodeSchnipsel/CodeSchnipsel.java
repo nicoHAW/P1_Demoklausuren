@@ -8,67 +8,97 @@ public class CodeSchnipsel {
 
         System.out.printf( "String s = \"a\" + 3 = "); 
         String s = "a" + 3;
-        System.out.printf( "%s", s );
+        System.out.printf( "%s", s );  //String a + 3 = a3
 
         System.out.printf( "\n\n");        
 
 
-        System.out.printf( " Character c = (char)( 3 + 'a' ) = "); 
+        
+        System.out.printf("Character c = (char)( 3 + 'a' ) = "); 
         Character c = (char)( 3 + 'a' );
-        System.out.printf( "%c", c );
+        System.out.printf( "%c", c ); //Char wie Zahlen a + 3(c) = d
 
+    
         
-        System.out.printf( "  = "); 
+        System.out.printf("\n\nWie Ausgaben zuvor, aber statt Ausgabe \\c (char) mit \\s(String)  = "); 
         Character cc = (char)( 3 + 'a' );
-        System.out.printf( " / %s", cc ); //als string auch Buchstabe. Als %d geht nicht.
-
-
-        System.out.printf( "\n\n");        
+        System.out.printf( "%s", cc ); //als string auch Buchstabe. Als %d geht nicht.
 
         
-        System.out.printf( "int val = (short)(2) + (char)(3)  = "); 
+        System.out.printf("\n\nWie Ausgaben zuvor, aber statt Ausgabe \\c (char) mit \\d(String)  = "); 
+        Character ccb = (char)( 3 + 'a' );
+        System.out.printf( "VERURSACHT ERROR" ); //als string auch Buchstabe. Als %d geht nicht.
+
+        System.out.printf( "\n\n");        
+      
+        
+        System.out.printf("int val = (short)(2) + (char)(3)  = "); 
         int val = (short)(2) + (char)(3);
-        System.out.printf( "Ausgabe als d: %d", val );
+        System.out.printf("Ausgabe als d: %d", val );
         
-        System.out.printf( "\n\n");   
+        System.out.printf("\n\n");   
 
         
-        System.out.printf( "int vald= (short)(2) + (char)(3)  = "); 
+        System.out.printf("int vald= (short)(2) + (char)(3)  = "); 
         int vald= (short)(2) + (char)(3);
-        System.out.printf( "Ausgabe als s: %s", val ); // Zahl als String
+        System.out.printf("Ausgabe als s: %s", val ); // Zahl als String
 
-        System.out.printf( "\n\n");   
+        System.out.printf("\n\n");   
 
         
-        System.out.printf( "int valdd = (short)(2) + (char)(3)  = "); 
+        System.out.printf("int valdd = (short)(2) + (char)(3)  = "); 
         int valdd = (short)(2) + (char)(3);
-        System.out.printf( "Ausgabe als c: %c", val ); // als Char wird ?Zeichen ausgegeben.
+        System.out.printf("Ausgabe als c: %c", val ); // als Char wird ?Zeichen ausgegeben.
 
-        System.out.printf( "\n\n");        
+        System.out.printf("\n\n");        
+        
+       
 
         
-        System.out.printf( " char f = (char)( 'e' - 2*('c'-'a') ); = "); 
+        
+        System.out.printf(" char f = (char)( 'e' - 2*('c'-'a') ); = "); 
         char f = (char)( 'e' - 2*('c'-'a') );
-        System.out.printf( "%c", f );
+        System.out.printf("%c", f ); //Ausgabe a
 
-        System.out.printf( "\n\n");   
+        System.out.printf("\n\n"); 
+        
+        
+        System.out.printf("Wie oben aber Ausgabe als String = "); 
+        char ffb = (char)( 'e' - 2*('c'-'a') ); /* e = 5 ; c = 3 ; a = 1 ; b = 2 ; d = 4
+                                                 * c-a = b ; 2*b = d , e-d = 1
+                                                 */
+        System.out.printf("%s", ffb ); //auch als String Ausgabe a
 
+        
+        System.out.printf("Wie oben aber Ausgabe als Decimal = "); 
+        char ffbb = (char)( 'e' - 2*('c'-'a') ); /* e = 5 ; c = 3 ; a = 1 ; b = 2 ; d = 4
+                                                 * c-a = b ; 2*b = d , e-d = 1
+                                                 */
+   //     System.out.printf("%d", ffbb ); //Ausgaben als d verursacht Error
+        System.out.printf("ERROR");
+        
+        
+        
+        System.out.printf("\n\n"); 
+
+        
+        
         
         System.out.println("byte valg = (byte)( 414141%41 < 41) ? 1F*1D : Float.NEGATIVE_INFINITY / Double.POSITIVE_INFINITY = "); 
         byte valg = (byte)( 414141%41 < 41
                 ? 1F*1D
                         : Float.NEGATIVE_INFINITY / Double.POSITIVE_INFINITY 
                 );
-        System.out.printf( "%d", valg );
+        System.out.printf("%d", valg );
 
-        System.out.printf( "\n\n");   
+        System.out.printf("\n\n");   
 
-        System.out.printf( " byte vala = (byte)( (0x7e & 0xbd &0xdb & 0xe7 ) ^ 0x87 ) = "); 
+        System.out.printf(" byte vala = (byte)( (0x7e & 0xbd &0xdb & 0xe7 ) ^ 0x87 ) = "); 
         byte vala = (byte)( (0x7e & 0xbd &0xdb & 0xe7 ) ^ 0x87 );
-        System.out.printf( "%x", vala );
+        System.out.printf("%x", vala );
 
 
-        System.out.printf( "\n\n");   
+        System.out.printf("\n\n");   
 
         System.out.printf( " long valb = ( Long.MAX_VALUE + Long.MIN_VALUE );\n"
                 + "        if( valb < Long.MIN_VALUE ){ System.out.printf( \"s\" )\n"
@@ -85,7 +115,7 @@ public class CodeSchnipsel {
 
         
         
-        System.out.printf( "  = "); 
+        System.out.printf("long valc = (Long.MIN_VALUE >>> 63) - (Long.MIN_VALUE >> 63); = "); 
         long valc = (Long.MIN_VALUE >>> 63) - (Long.MIN_VALUE >> 63);
         System.out.printf( "%d", valc );
 
