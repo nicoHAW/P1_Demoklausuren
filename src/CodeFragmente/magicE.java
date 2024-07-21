@@ -1,4 +1,4 @@
-package CodeSchnipsel;
+package CodeFragmente;
 import java.util.*;
 
 public class magicE {

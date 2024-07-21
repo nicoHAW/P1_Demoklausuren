@@ -1,4 +1,4 @@
-package CodeSchnipsel;
+package CodeFragmente;
 
 public class CodeFragmente {
 

@@ -521,7 +521,7 @@ public class CodeSchnipsel {
         System.out.printf("\n Character.MAX_VALUE als Bit = %s", Integer.toBinaryString(Character.MAX_VALUE));
         System.out.printf("\n Character.MAX_VALUE als Hex = 0x%X ", (int) Character.MAX_VALUE);
         
-        System.out.printf("\n\n 1 << 16 = %d", (int)Character.MAX_VALUE);
+        System.out.printf("\n\n 1 << 16 = %d", (1 << 16));
         System.out.printf("\n 1 << 16 als Bit = %s", Integer.toBinaryString(1 << 16));
         System.out.printf("\n 1 << 16 als Hex = 0x%X", (int)(1 << 16));
         
@@ -1173,11 +1173,16 @@ public class CodeSchnipsel {
         
         System.out.printf( "byte c=0x11; do System.out.printf( \"%%d \", c ); while( --c>0xab ); = ");
         byte crule=0x11; 
-        do System.out.printf( "%d ", c ); while( --c>0xab );
-                
+        do System.out.printf( "%d ", crule ); while( --crule>0xab );
         
+        
+        System.out.printf( "long dreal = 4;\r\n"
+                + "        do { System.out.printf( \"%%d \", dreal ); } while( dreal-- - --dreal > 1<<2 ); = ");
         long dreal = 4;
-        do { System.out.printf( "%d ", d ); } while( dreal-- - --dreal > 1<<2 );
-
+        do { System.out.printf( "%d ", dreal ); } while( dreal-- - --dreal > 1<<2 );
+        
+        
+         
+        
     }//main
 }//class

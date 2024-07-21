@@ -10,9 +10,5 @@ public class startRecord {
         
         System.out.print(person.vorname() + " "+" " + person.nachname() );
         System.out.print(person.alter());
-        
-        
-        
     }
-
 }
