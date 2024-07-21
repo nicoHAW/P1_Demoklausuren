@@ -121,13 +121,13 @@ public class CodeFragmente {
                 + "        final Iterator<Character> itera = list.iterator();\r\n"
                 + "        while( iter.hasNext() ){\r\n"
                 + "            final Character c = itera.next(); = ");
-        final List<Character> list = new ArrayList<Character>();
-        list.add('l'); list.add('a'); list.add(',');
-        list.add('l'); list.add('i'); list.add(',');
-        list.add('l'); list.add('u'); list.add('.');
-        final Iterator<Character> itera = list.iterator();
-        while( iter.hasNext() ){
-            final Character c = itera.next();
+        final List<Character> listuzt = new ArrayList<Character>();
+        listuzt.add('l'); listuzt.add('a'); listuzt.add(',');
+        listuzt.add('l'); listuzt.add('i'); listuzt.add(',');
+        listuzt.add('l'); listuzt.add('u'); listuzt.add('.');
+        final Iterator<Character> iteruzt = listuzt.iterator();
+        while( iteruzt.hasNext() ){
+            final Character c = iteruzt.next();
             System.out.printf( "%c", c );
         }//while
 
@@ -149,7 +149,7 @@ public class CodeFragmente {
         final Iterator<Integer> iterb = listb.iterator();
         while( iterb.hasNext() ){
             final Integer ib = iterb.next();
-            if( iter.hasNext() ) iterb.next();
+            if( iterb.hasNext() ) iterb.next();
             System.out.printf( "%d ", ib );
         }//while
 
@@ -172,13 +172,13 @@ public class CodeFragmente {
                 + "            System.out.printf( \"%%s\", s.pop() );\r\n"
                 + "        }//while  = ");
         final Stack<String> sc = new Stack<String>();
-        s.push( "x" );
-        s.push( "p" );
-        s.push( "o" );
-        s.push( "q" );
-        s.push( "x" );
+        sc.push( "x" );
+        sc.push( "p" );
+        sc.push( "o" );
+        sc.push( "q" );
+        sc.push( "x" );
         while( ! sc.isEmpty() ){
-            System.out.printf( "%s", s.pop() );
+            System.out.printf( "%s", sc.pop() );
         }//while
 
 
@@ -200,7 +200,7 @@ public class CodeFragmente {
                 + "            for( final String c : cm ){\r\n"
                 + "                System.out.println( c + \"e \" + v );\r\n"
                 + "            }//for\r\n"
-                + "        }//for = ");
+                + "        }//for = \n");
         final List<String> vm = new ArrayList<String>();
         vm.add( "Gurke" );
         vm.add( "Paprika" );
@@ -243,20 +243,20 @@ public class CodeFragmente {
                 + "            System.out.printf( \"%%c\", map.get( sd ) );\r\n"
                 + "        }//for = ");
         final Map<String,Character> mapa = new TreeMap<String,Character>();
-        map.put( "Papaya", 'a' );
-        map.put( "Ananas", 'b' );
-        map.put( "Ananas", 'c' );
-        map.put( "Mango", 'd' );
-        map.put( "Orange", 'e' );
-        map.put( "Mango", 'f' );
-        map.put( "Orange", 'g' );
-        map.put( "Mango", 'h' );
-        map.put( "Papaya", 'o' ); // "Sprung", also 'o' statt 'i', damit Buschtaben leichter unterscheidbar
-        map.put( "Zitrone", 'p' );
-        map.put( "Orange", 'q' );
+        mapa.put( "Papaya", 'a' );
+        mapa.put( "Ananas", 'b' );
+        mapa.put( "Ananas", 'c' );
+        mapa.put( "Mango", 'd' );
+        mapa.put( "Orange", 'e' );
+        mapa.put( "Mango", 'f' );
+        mapa.put( "Orange", 'g' );
+        mapa.put( "Mango", 'h' );
+        mapa.put( "Papaya", 'o' ); // "Sprung", also 'o' statt 'i', damit Buschtaben leichter unterscheidbar
+        mapa.put( "Zitrone", 'p' );
+        mapa.put( "Orange", 'q' );
         System.out.printf( "%d : ", mapa.size() );
         for ( final String sd : mapa.keySet() ){
-            System.out.printf( "%c", map.get( sd ) );
+            System.out.printf( "%c", mapa.get( sd ) );
         }//for
 
 
@@ -503,7 +503,7 @@ public class CodeFragmente {
         mapm.put( "Luke", 1 );
         mapm.put( "Yoda", 2 );
         mapm.put( "Rey", 3 );
-        for ( final String sm : map.keySet() ){
+        for ( final String sm : mapm.keySet() ){
             System.out.printf( "%d ", mapm.get( sm ) );
         }//for
         mapm.put( "Aayla", 4 );
@@ -637,16 +637,16 @@ public class CodeFragmente {
                 + "            for( final String cp : cmp ){\r\n"
                 + "                System.out.println( cp + \"e \" + vp );\r\n"
                 + "            }//for\r\n"
-                + "        }//for = ");
+                + "        }//for = \n");
         final List<String> vmp = new ArrayList<String>();
-        vm.add( "Gurke" );
-        vm.add( "Paprika" );
-        vm.add( "Tomate" );
-        vm.add( "Zucchini" );
+        vmp.add( "Gurke" );
+        vmp.add( "Paprika" );
+        vmp.add( "Tomate" );
+        vmp.add( "Zucchini" );
         final List<String> cmp = new ArrayList<String>();
-        cm.add( "rot" );
-        cm.add( "gelb" );
-        cm.add( "gruen" );
+        cmp.add( "rot" );
+        cmp.add( "gelb" );
+        cmp.add( "gruen" );
         for( final String vp : vmp ){
             for( final String cp : cmp ){
                 System.out.println( cp + "e " + vp );

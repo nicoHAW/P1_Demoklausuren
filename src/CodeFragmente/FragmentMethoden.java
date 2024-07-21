@@ -6,27 +6,36 @@ public class FragmentMethoden {
 
     //WAS MACHT DIESE METHODE?
     public int magicE( int x ) {
+        System.out.printf("Map<Long,String> map = null;\r\n"
+                + "\r\n"
+                + "        for( int stillToDo=x; --stillToDo>0; ){\r\n"
+                + "            map = new HashMap<Long,String>();\r\n"
+                + "            Long someValue = 1L * ( x %% stillToDo) +1;\r\n"
+                + "            do{\r\n"
+                + "                someValue++;\r\n"
+                + "            } while( map.containsKey( someValue ));\r\n"
+                + "\r\n"
+                + "            map.put( someValue, someValue.toString() );\r\n"
+                + "        }//for\r\n"
+                + "        return map.size();\n");
+        System.out.printf("int x = %d", x);
+        
         Map<Long,String> map = null;
 
         for( int stillToDo=x; --stillToDo>0; ){
             map = new HashMap<Long,String>();
             Long someValue = 1L * ( x % stillToDo) +1;
-
             do{
                 someValue++;
             } while( map.containsKey( someValue ));
 
             map.put( someValue, someValue.toString() );
         }//for
-
-
-        System.out.printf( "%d", magicE( 17 ));
-
         return map.size();
 
     }//method()
 
-    
+
     //MAGIC 2
     //    System.out.printf( "%d", magic( 4 ) );
 
@@ -42,11 +51,11 @@ public class FragmentMethoden {
         }//for
         return map.size();
     }//method()
-    
-    
-    
-    
-    
+
+
+
+
+
 
     //Vereinfachen Sie den Methoden-Rumpf:
 
@@ -67,19 +76,28 @@ public class FragmentMethoden {
 
     //COMPUTE
     public int compute( int a, int b ){
+        //Print
+        System.out.printf("public int compute( int a, int b ){\r\n"
+                + "        for( int i=0; i<b; i++ ){\r\n"
+                + "            a+=2;\r\n"
+                + "        }//for\n\n");
+        System.out.printf("int a = %d ; int b = %d", a, b);
+
+        //Method
         for( int i=0; i<b; i++ ){
-            a+=3;
+            a+=2;
         }//for
+
         return a;
     }//method()
 
-    
-    
+
+
     //TESTFRUIT
 
     //        (c) Der enum Fruit sei wie beschrieben gegeben. Vereinfachen Sie den Methoden-Rumpf:
     enum Fruit { APPLE, LEMON, ORANGE }
-    
+
     public boolean testFruit( Fruit f1, Fruit f2 ){
         if( f1 == Fruit.ORANGE ){
             if( f2 == Fruit.APPLE || f2 == Fruit.LEMON ) return true;
@@ -98,7 +116,7 @@ public class FragmentMethoden {
 
     //MAGIC
     // System.out.printf( "%d", magic( 4 ) );
-    
+
     public int magic( int p ){
         int x = 0;
         int y = p;
@@ -109,10 +127,10 @@ public class FragmentMethoden {
         return x;
     }//method()
 
-    
+
     //magic
-    
-//System.out.printf( "%s", magicre() );
+
+    //System.out.printf( "%s", magicre() );
     public String magicre(){
         final String a = "1";
         final int b = 2;
@@ -120,9 +138,9 @@ public class FragmentMethoden {
         return c + b + a;
     }//method()
 
-    
+
     //MEHR MAGIC
-    
+
     public int magiczt( int p ){
         int w = 0;
         for( int i=0; i<p; i++ ){
@@ -131,12 +149,12 @@ public class FragmentMethoden {
         return w;
     }//method()
 
-  //  System.out.printf( "%d", magiczt( 4 ) );
+    //  System.out.printf( "%d", magiczt( 4 ) );
 
-// MEHR MAGIC
+    // MEHR MAGIC
 
     //System.out.printf( "%d", magicew( 4 ) );
-    
+
     public int magicew( int p ){
         int a = 0;
         int b = 3;
@@ -150,11 +168,11 @@ public class FragmentMethoden {
 
 
 
-    
-    
-    
+
+
+
     //SWITCHCASE
-    
+
     public boolean isUpperCaseLatinLetter( final char c ){
         switch( c ){
             case 'A': return true;
@@ -187,10 +205,10 @@ public class FragmentMethoden {
             default: return false;
         }//switch
     }//method()
-    
-    
-    
-    
+
+
+
+
 
 
 }//magicE
