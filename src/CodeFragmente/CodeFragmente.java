@@ -186,8 +186,6 @@ public class CodeFragmente {
 
 
 
-
-        ...
         final Set<String> set = new TreeSet<String>();
         set.add( "v" ); set.add( "w" ); set.add( "x" );
         set.add( "w" ); set.add( "x" ); set.add( "y" );

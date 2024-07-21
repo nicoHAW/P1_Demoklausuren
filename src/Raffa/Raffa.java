@@ -77,7 +77,7 @@ public class Raffa {
     System.out.printf("\n\nErklärung\n");
     System.out.printf("\n 6>>>5 = " + (6>>>5));
     System.out.printf("\n 6 als Bit = %4s", Integer.toBinaryString(6));
-    System.out.printf("\n 6>>>5 6 als Bit = %4s",  Integer.toBinaryString(6>>>5));
+    System.out.printf("\n 6>>>5 als Bit = %4s",  Integer.toBinaryString(6>>>5));
     System.out.printf("\n 6>>>5 = " + (6>>>5));
     System.out.printf("\n\n 3 >> 2 = " + (3));
     System.out.printf("\n 3 als Bit = %4s",  Integer.toBinaryString(3));
@@ -110,7 +110,7 @@ public class Raffa {
     System.out.printf("\n 2>>>1 als Bit = %4s",  Integer.toBinaryString(2>>>1));
     System.out.printf("\n\n (-2)>>>1 = " + (-2>>>1));
     System.out.printf("\n -2 als Bit = %4s",  Integer.toBinaryString(-2));
-    System.out.printf("\n (-2)>>>1 als Bit = %4s",  Integer.toBinaryString(-2>>>1));
+    System.out.printf("\n (-2)>>>1 als Bit = 0%4s",  Integer.toBinaryString(-2>>>1));
     
     
     System.out.printf( "\n\n\n");
@@ -133,7 +133,7 @@ public class Raffa {
     System.out.printf("\n Character.MAX_VALUE als Bit = %s", Integer.toBinaryString(Character.MAX_VALUE));
     System.out.printf("\n Character.MAX_VALUE als Hex = 0x%X ", (int) Character.MAX_VALUE);
     
-    System.out.printf("\n\n 1 << 16 = %d", (int)Character.MAX_VALUE);
+    System.out.printf("\n\n 1 << 16 = %d", (1 << 16));
     System.out.printf("\n 1 << 16 als Bit = %s", Integer.toBinaryString(1 << 16));
     System.out.printf("\n 1 << 16 als Hex = 0x%X", (int)(1 << 16));
     
@@ -157,6 +157,44 @@ public class Raffa {
     System.out.printf( "\n131313 %% 13 = %d ; also: %b ", (131313 % 13), (131313 % 13 < 0));
     System.out.printf( "\n 1d (double) = %f; 1f (float) = %f; 01 (int) = %d; 0x1 (hex) = %x; 0b1 (binär) = %d;", 1d, 1f, 01, 0x1, 0b1);
     
+    System.out.printf( "\n\n\n");
+    
+    System.out.printf( "Boolean a = !(-4>-5) ? (!true^!!true)||true : null; = ");
+    Boolean abd = !(-4>-5) ? (!true^!!true)||true : null;
+    System.out.printf( "%s", abd );
+    System.out.printf( "\n\n\n");
+    
+    System.out.printf( "\nErklärung");
+    System.out.printf( "\nBoolean ist Wrapper-Klasse und kann 'null' annehmen");
+    
+    System.out.printf( "\n\n\n");
+    
+    System.out.printf( "byte c = (byte)((0x81|0x42|0x24|0x18)^0x3c); = ");
+    byte cgh = (byte)((0x81|0x42|0x24|0x18)^0x3c);
+    System.out.printf( "%x", cgh );
+    
+    System.out.printf( "\n\n");
+    
+    System.out.printf( "\nErklärung");
+    System.out.printf("\n 0x81 | 0x42 | 0x24 | 0x18 ) ^ 0x3c"
+            + "         * \r\n"
+            + "         * Bitwise Zuordnung: \r\n"
+            + "         * 0x81 =      1000 0001\r\n"
+            + "         * 0x42 =    | 0100 0010  | = OR-Verknüpfung\r\n"
+            + "         * 0x24 =    | 0010 0100  | = OR-Verknüpfung\r\n"
+            + "         * 0x18 =    | 0001 1000  | = OR-Verknüpfung\r\n"
+            + "         *----------------------\r\n"
+            + "         *             1111 1111\r\n"
+            + "         * 0x3c =    ^ 0011 1100  ^ = XOR-Verknüpfung\r\n"
+            + "         * ---------------------\r\n"
+            + "         * Ergebnis:   1100 0011");
+    
+    System.out.printf( "\n\n\n");
+
+
+    System.out.printf( "float i = (float)( (3/2)*(4/3)*(8/4) ); = ");
+    float irill = (float)( (3/2)*(4/3)*(8/4) );
+    System.out.printf( "%.2f", irill ); 
     System.out.printf( "\n\n\n");
     
     
