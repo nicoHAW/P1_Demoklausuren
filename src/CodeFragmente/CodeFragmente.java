@@ -8,6 +8,7 @@ public class CodeFragmente {
     public static void main(String[] args) {
 
         System.out.printf("----- SEITE 1 -----");
+        System.out.printf("\n\n");
 
         System.out.printf("final Integer[] ia = { 7, 5, 3, 2 };\r\n"
                 + "final Iterator<Integer> iter = Arrays.asList( ia ).iterator();\r\n"
@@ -51,7 +52,8 @@ public class CodeFragmente {
 
 
         System.out.printf("----- SEITE 2 -----");
-
+        System.out.printf("\n\n");
+        
 
         System.out.printf( "final Map<String,Character> map = new TreeMap<String,Character>();\r\n"
                 + "        map.put( \"Luke\", 'a' );\r\n"
@@ -110,7 +112,8 @@ public class CodeFragmente {
 
 
         System.out.printf("----- SEITE 6 -----");
-
+        System.out.printf("\n\n");
+        
         System.out.printf( "        final List<Character> list = new ArrayList<Character>();\r\n"
                 + "        list.add('l'); list.add('a'); list.add(',');\r\n"
                 + "        list.add('l'); list.add('i'); list.add(',');\r\n"
@@ -157,7 +160,8 @@ public class CodeFragmente {
 
 
         System.out.printf("----- SEITE 7 -----");
-
+        System.out.printf("\n\n");
+        
         System.out.printf( "        final Stack<String> sc = new Stack<String>();\r\n"
                 + "        s.push( \"x\" );\r\n"
                 + "        s.push( \"p\" );\r\n"
@@ -219,7 +223,8 @@ public class CodeFragmente {
         System.out.printf( "\n\n\n" );
 
         System.out.printf("----- SEITE 8 -----");
-
+        System.out.printf("\n\n");
+        
 
         System.out.printf("final Map<String,Character> mapa = new TreeMap<String,Character>();\r\n"
                 + "        map.put( \"Papaya\", 'a' );\r\n"
@@ -296,7 +301,8 @@ public class CodeFragmente {
 
 
         System.out.printf("----- SEITE 10 -----");
-
+        System.out.printf("\n\n");
+        
         System.out.printf("final List<Character> listg = new ArrayList<Character>();\r\n"
                 + "        listg.add('B'); listg.add('l'); listg.add('a'); listg.add(',');\r\n"
                 + "        listg.add('b'); listg.add('l'); listg.add('a'); listg.add(',');\r\n"
@@ -344,7 +350,8 @@ public class CodeFragmente {
 
 
         System.out.printf("----- SEITE 11 -----");
-
+        System.out.printf("\n\n");
+        
 
         System.out.printf("final Map<String,Character> mapi = new TreeMap<String,Character>();\r\n"
                 + "        map.put( \"Yoda\", 'Y' );\r\n"
@@ -418,7 +425,8 @@ public class CodeFragmente {
 
 
         System.out.printf("----- SEITE 13 -----");
-
+        System.out.printf("\n\n");
+        
 
         System.out.printf("final Collection<Character> coll = new ArrayList<Character>();\r\n"
                 + "        coll.add( 'P' );\r\n"
@@ -474,10 +482,9 @@ public class CodeFragmente {
 
 
 
-
-
         System.out.printf("----- SEITE 14 -----");
-
+        System.out.printf("\n\n");
+        
 
         System.out.printf("final Map<String,Integer> mapm = new TreeMap<String,Integer>();\r\n"
                 + "        mapm.put( \"Luke\", 1 );\r\n"
@@ -507,7 +514,6 @@ public class CodeFragmente {
         }//for
 
         System.out.printf( "\n\n\n" );
-
 
 
 
@@ -554,8 +560,12 @@ public class CodeFragmente {
 
         System.out.printf( "\n\n\n" );
 
+        
+        
+        
         System.out.printf("----- SEITE 15 -----");
-
+        System.out.printf("\n\n");
+        
 
 
         System.out.printf("final Set<String> zoo = new HashSet<String>();\r\n"
@@ -648,8 +658,12 @@ public class CodeFragmente {
 
         System.out.printf( "\n\n\n" );
 
+        
+        
+        
         System.out.printf("----- SEITE 17 -----");
-
+        System.out.printf("\n\n");
+        
 
         System.out.printf("final Short[] array = { null, null, null, null };\r\n"
                 + "        for( int iq=0; iq<4; ){\r\n"
@@ -720,10 +734,10 @@ public class CodeFragmente {
 
 
 
-
         System.out.printf("----- SEITE 20 -----");
-
-
+        System.out.printf("\n\n");
+        
+        
         System.out.printf( "  = ");
         final Collection<Character> colla = new ArrayList<Character>();
         coll.add( 'P' );
@@ -770,9 +784,9 @@ public class CodeFragmente {
 
 
 
-
-        System.out.printf("----- SEITE 21 -----");
-
+        System.out.printf("----- SEITE 21 -----\n\n");
+        System.out.printf("\n\n");
+        
 
 
         System.out.printf("final Map<String,Integer> mapr = new TreeMap<String,Integer>();\r\n"
@@ -850,7 +864,8 @@ public class CodeFragmente {
 
 
         System.out.printf("----- SEITE 22 -----");
-
+        System.out.printf("\n\n");
+        
 
         System.out.printf("final Set<String> zoow = new HashSet<String>();\r\n"
                 + "        zoo.add( \"Emu\" );\r\n"
@@ -900,7 +915,8 @@ public class CodeFragmente {
 
 
         System.out.printf("----- SEITE 23 -----");
-
+        System.out.printf("\n\n");
+        
 
         System.out.printf("final List<String> vmt = new ArrayList<String>();\r\n"
                 + "        vmt.add( \"Gurke\" );\r\n"
@@ -937,7 +953,8 @@ public class CodeFragmente {
 
 
         System.out.printf("----- SEITE 24 -----");
-
+        System.out.printf("\n\n");
+        
 
         System.out.printf("final Short[] arrayc = { null, null, null, null };\r\n"
                 + "        for( int ire=0; ire<4; ){\r\n"
@@ -1012,8 +1029,9 @@ public class CodeFragmente {
 
 
         System.out.printf("----- SEITE 25 -----");
-
-
+        System.out.printf("\n\n");
+        
+        
         System.out.printf("final Collection<Character> coller = new ArrayList<Character>();\r\n"
                 + "        coller.add( 'A' );\r\n"
                 + "        coller.add( 'B' );\r\n"
@@ -1070,7 +1088,8 @@ public class CodeFragmente {
 
 
         System.out.printf("----- SEITE 26 -----");
-
+        System.out.printf("\n\n");
+        
 
         System.out.printf("final Map<String,Integer> maptz = new TreeMap<String,Integer>();\r\n"
                 + "        maptz.put( \"Luke\", 1 );\r\n"
@@ -1150,7 +1169,8 @@ public class CodeFragmente {
 
 
         System.out.printf("----- SEITE 27 -----");
-
+        System.out.printf("\n\n");
+        
 
 
         System.out.printf("final Set<String> zoomj = new HashSet<String>();\r\n"
@@ -1208,7 +1228,9 @@ public class CodeFragmente {
 
 
         System.out.printf("----- SEITE 28 -----");
-
+        System.out.printf("\n\n");
+        
+        
         System.out.printf("final List<String> vmjh = new ArrayList<String>();\r\n"
                 + "        vmjh.add( \"Zucchini\" );\r\n"
                 + "        vmjh.add( \"Tomate\" );\r\n"
@@ -1244,8 +1266,8 @@ public class CodeFragmente {
 
 
         System.out.printf("----- SEITE 29 -----");
-
-
+        System.out.printf("\n\n");
+        
 
         System.out.printf("final Short[] arraygf = { null, null, null, null };\r\n"
                 + "        for( int igf=0; igf<4; ){\r\n"
@@ -1319,7 +1341,8 @@ public class CodeFragmente {
 
 
         System.out.printf("----- SEITE 31 -----");
-
+        System.out.printf("\n\n");
+        
 
 
 
@@ -1377,7 +1400,9 @@ public class CodeFragmente {
 
 
         System.out.printf("----- SEITE 32 -----");
-
+        System.out.printf("\n\n");
+        
+        
 
         System.out.printf("final Map<Character,Integer> mapiu = new TreeMap<Character,Integer>();\r\n"
                 + "        mapiu.put( 'c', 1 );\r\n"
@@ -1410,14 +1435,19 @@ public class CodeFragmente {
         
         
         System.out.printf("----- SEITE 33 -----");
-
+        System.out.printf("\n\n");
+        
+        
 
         System.out.printf("for( int ing : new int[]{ 1, 2, 3, 4 } ) System.out.printf( \"%%x \", ing ); = ");
         for( int ing : new int[]{ 1, 2, 3, 4 } ) System.out.printf( "%x ", ing );
 
 
         System.out.printf("----- SEITE 34 -----");
-
+        System.out.printf("\n\n");
+        
+        
+        
         System.out.printf("final Set<String> zoong = new HashSet<String>();\r\n"
                 + "        zoong.add( \"Elefant\" );\r\n"
                 + "        zoong.add( \"Zebra\" );\r\n"
@@ -1487,7 +1517,10 @@ public class CodeFragmente {
 
 
         System.out.printf("----- SEITE 37 -----");
-
+        System.out.printf("\n\n");
+        
+        
+        
         System.out.printf("final Queue<Integer> queuepo = new LinkedList<Integer>();\r\n"
                 + "        int npo=1;\r\n"
                 + "        for ( int ipo=0; ipo<3; ipo++ ){ queuepo.add( npo++ ); }\r\n"
